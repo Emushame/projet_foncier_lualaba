@@ -1,0 +1,5 @@
+province,n_parcelles,superficie_med,superficie_moy,valeur_med,valeur_moy,pct_formel,pct_informel,pct_litigieux,pct_minier,dist_med_km
+Haut-Katanga,20000,404.52,483.34,171.68,270.0,33.38,25.61,41.01,54.82,167.5
+Haut-Lomami,13000,1205.16,1794.51,423.1,801.9,39.25,31.35,29.4,24.68,133.28
+Lualaba,12000,789.55,1091.06,196.32,337.58,29.02,19.46,51.52,85.04,167.33
+Tanganyika,12000,1502.56,2259.25,526.5,1001.12,36.13,28.52,35.34,4.77,147.63

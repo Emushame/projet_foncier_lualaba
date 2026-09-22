@@ -1,0 +1,266 @@
+/* ============================================================
+   Style professionnel — Moteur Foncier Intelligent
+   Police : Inter (Google Fonts)
+   Palette : gris foncé, vert profond, orange accent
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Police globale */
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #111827;
+    letter-spacing: -0.011em;
+}
+
+/* Titres */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    color: #1F2937;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.015em;
+    color: #374151;
+}
+
+/* Code et chiffres */
+code,
+.mono,
+pre {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.875rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #F9FAFB;
+    border-right: 1px solid #E5E7EB;
+}
+
+section[data-testid="stSidebar"]>div:first-child {
+    padding-top: 1.5rem;
+}
+
+/* Boutons */
+.stButton>button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #D1D5DB;
+    background-color: #FFFFFF;
+    color: #111827;
+    transition: all 0.15s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.stButton>button:hover {
+    border-color: #0E9F6E;
+    color: #0E9F6E;
+    box-shadow: 0 2px 4px 0 rgba(14, 159, 110, 0.1);
+}
+
+.stButton>button[kind="primary"] {
+    background-color: #0E9F6E;
+    color: white;
+    border-color: #0E9F6E;
+}
+
+.stButton>button[kind="primary"]:hover {
+    background-color: #057A55;
+    border-color: #057A55;
+    color: white;
+}
+
+/* Métriques KPI */
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6B7280;
+}
+
+[data-testid="stMetricValue"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.025em;
+}
+
+/* Tableaux */
+[data-testid="stDataFrame"] {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+}
+
+/* Inputs */
+.stTextInput>div>div>input,
+.stNumberInput>div>div>input,
+.stSelectbox>div>div>select {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+}
+
+.stTextInput>div>div>input:focus,
+.stNumberInput>div>div>input:focus {
+    border-color: #0E9F6E;
+    box-shadow: 0 0 0 3px rgba(14, 159, 110, 0.1);
+}
+
+/* Sliders */
+[data-testid="stSlider"]>div>div>div>div {
+    background-color: #0E9F6E;
+}
+
+/* Séparateurs */
+hr {
+    border: none;
+    border-top: 1px solid #E5E7EB;
+    margin: 1.5rem 0;
+}
+
+/* Alertes */
+.stAlert {
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+/* Cartes personnalisées */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    height: 100%;
+}
+
+.card-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6B7280;
+    margin-bottom: 0.5rem;
+}
+
+.card-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.025em;
+}
+
+.card-delta {
+    font-size: 0.813rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.badge-green {
+    background-color: #DEF7EC;
+    color: #03543F;
+}
+
+.badge-orange {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+.badge-red {
+    background-color: #FDE8E8;
+    color: #9B1C1C;
+}
+
+.badge-gray {
+    background-color: #F3F4F6;
+    color: #374151;
+}
+
+/* Header de page */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 1.5rem;
+}
+
+.app-header-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #0E9F6E 0%, #057A55 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.app-header-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.02em;
+}
+
+.app-header-subtitle {
+    font-size: 0.813rem;
+    color: #6B7280;
+}
+
+/* Masquer le menu par défaut Streamlit */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
