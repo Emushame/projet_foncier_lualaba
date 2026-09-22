@@ -1,9 +1,9 @@
 {
-  "model_name": "Random Forest",
-  "r2_test": 0.9476822428783327,
-  "rmse_test": 1870.0694780425806,
-  "mae_test": 662.6984114259405,
-  "training_date": "2026-09-22T12:32:12.721843",
+  "model_name": "Gradient Boosting",
+  "r2_test": 0.9431352269197992,
+  "rmse_test": 1949.6418497142606,
+  "mae_test": 682.6315041370854,
+  "training_date": "2026-09-22T12:50:24.777690",
   "n_train": 45600,
   "n_test": 11400,
   "features_numeric": [

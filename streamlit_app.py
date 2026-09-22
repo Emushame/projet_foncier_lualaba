@@ -1,15 +1,21 @@
 """
 Point d'entrée de l'application Streamlit Cloud.
-Redirige vers l'application principale dans src/app/app.py
+
+Ce fichier est le "main module" détecté par Streamlit Cloud.
+Il ajoute le dossier src/app au PYTHONPATH puis exécute app.py
+comme s'il était lancé directement.
 """
 
 import sys
+import runpy
 from pathlib import Path
 
-# Ajouter src/app au PYTHONPATH
+# Racine du projet (dossier contenant ce fichier)
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "src" / "app"))
 
-# Exécuter l'application principale
-with open(ROOT / "src" / "app" / "app.py", "r", encoding="utf-8") as f:
-    exec(compile(f.read(), "src/app/app.py", "exec"))
+# Ajouter src/app au PYTHONPATH pour que les imports relatifs fonctionnent
+APP_DIR = ROOT / "src" / "app"
+sys.path.insert(0, str(APP_DIR))
+
+# Exécuter app.py comme s'il était lancé directement
+runpy.run_path(str(APP_DIR / "app.py"), run_name="__main__")
