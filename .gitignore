@@ -65,3 +65,4 @@ logs/
 *.bak
 *.swp
 *~
+data/processed/*.gpkg
